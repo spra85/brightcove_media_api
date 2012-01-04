@@ -8,11 +8,11 @@ This gem provides an additional object wrapper around David Czarnecki's Ruby-MAP
 
 To configure logger, example using Lumberjack logger:
 
-  Brightcove::API::Request.logger = Lumberjack.new(log_file_path, :device => Lumberjack::Device::DateRollingLogFile)
+  Brightcove::MediaAPI::Request.logger = Lumberjack::Logger.new(log_file_path, :device => Lumberjack::Device::DateRollingLogFile)
 
 Using Rails logger:
 
-  Brightcove::API::Request.logger = Rails.logger
+  Brightcove::MediaAPI::Request.logger = Rails.logger
 
 == Contributing to brightcove_media_api
 
