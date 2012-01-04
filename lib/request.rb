@@ -32,7 +32,7 @@ module Brightcove
         private
 
           def handle_response(api_type, response)
-            logger.debug("#{api_type} response - [#{response.inspect}]") if logger
+            logger.info("#{api_type} response - [#{response.inspect}]") if logger
 
             logger.error("#{api_type} API error => #{response["error"].inspect}") if logger
 

@@ -25,7 +25,6 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "brightcove_media_api.gemspec",
-    "lib/brightcove_api.rb",
     "lib/brightcove_config.rb",
     "lib/playlist.rb",
     "lib/request.rb",
