@@ -6,9 +6,13 @@ This gem provides an additional object wrapper around David Czarnecki's Ruby-MAP
 
   BrightcoveConfig.configuration_files = config.yml # Set to YAML file location.  For example, see spec/test_account.yml
 
-To configure logger, example:
+To configure logger, example using Lumberjack logger:
 
   Brightcove::API::Request.logger = Lumberjack.new(log_file_path, :device => Lumberjack::Device::DateRollingLogFile)
+
+Using Rails logger:
+
+  Brightcove::API::Request.logger = Rails.logger
 
 == Contributing to brightcove_media_api
 
