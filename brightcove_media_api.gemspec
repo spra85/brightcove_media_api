@@ -24,16 +24,17 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "brightcove_media_api.gemspec",
     "lib/brightcove_api.rb",
     "lib/brightcove_config.rb",
     "lib/playlist.rb",
     "lib/request.rb",
     "lib/video.rb",
-    "test/brightcove_config_spec.rb",
-    "test/playlist_spec.rb",
-    "test/spec_helper.rb",
-    "test/test_account.yml",
-    "test/video_spec.rb"
+    "spec/brightcove_config_spec.rb",
+    "spec/playlist_spec.rb",
+    "spec/spec_helper.rb",
+    "spec/test_account.yml",
+    "spec/video_spec.rb"
   ]
   s.homepage = "http://github.com/spra85/brightcove_media_api"
   s.licenses = ["MIT"]
