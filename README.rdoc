@@ -2,6 +2,25 @@
 
 THIS IS STILL IN DEVELOPMENT
 
+This gem provides an additional object wrapper around David Czarnecki's Ruby-MAPI-Wrapper.  To set-up:
+
+BrightcoveConfig.configuration_files = config.yml # Set to YAML file location, example YML:
+
+brightcove_account:
+  account_id: 123456789
+  read_tokens:
+    - read_token1
+  url_read_tokens:
+    - url_read_token1
+  write_tokens:
+    - write_token1
+    - write_token2
+    - write_token3
+
+To configure logger, example:
+
+Brightcove::API::Request.logger = Lumberjack.new(log_file_path, :device => Lumberjack::Device::DateRollingLogFile)
+
 == Contributing to brightcove_media_api
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
