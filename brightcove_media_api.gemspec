@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "brightcove_media_api.gemspec",
     "lib/brightcove_config.rb",
+    "lib/brightcove_media_api.rb",
     "lib/playlist.rb",
     "lib/request.rb",
     "lib/video.rb",
