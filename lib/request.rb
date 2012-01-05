@@ -5,7 +5,7 @@ module Brightcove
     class Request
 
       class << self
-        attr_accessor :logger
+        cattr_accessor :logger
 
         def send_api_post_file(method, file_path, params)
           logger.debug("[POST_FILE] - #{method} - file_path => #{file_path}, params => #{params.inspect}") if logger
@@ -36,7 +36,7 @@ module Brightcove
           def handle_response(api_type, response)
             logger.info("#{api_type} response - [#{response.inspect}]") if logger
 
-            logger.error("#{api_type} API error => #{response["error"].inspect}") if logger
+            logger.error("#{api_type} API error => #{response["error"].inspect}") if response["error"] && logger
 
             response
           end
