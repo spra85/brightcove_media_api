@@ -16,3 +16,4 @@ end
 
 gem 'config_object'
 gem 'brightcove-api'
+gem 'activesupport'
